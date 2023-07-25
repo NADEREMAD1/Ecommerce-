@@ -1,27 +1,96 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- animate CSS library for animation effects on the page-->
-     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    <!-- style css bootstrap -->
-  <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css.map">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1 class="text-danger">Hello, world!</h1>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- script bootstrap -->
-    <script src="js/all.min.js"></script>
-<script src="js/bootstrap.bundle.js.map"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-  </body>
+  <!-- main css  -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- animate CSS library for animation effects on the page-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,600;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <!-- style css bootstrap -->
+  <!-- <link rel="stylesheet" href="css/all.min.css" /> -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css.map" /> -->
+  <!-- Madia Css -->
+  <link rel="stylesheet" href="css/Madia.css">
+  <title>Wep Sit ECommerce</title>
+</head>
+
+<body class="bg-danger">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary  z-3 bg-secondary">
+    <div class="container-fluid">
+      <a class="navbar-brand bgg" href="index.html">
+        <div class="background-navbar">
+          <img src="img/jacket-2.jpg" alt="nav_bar_img">
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="shop.html">Shop</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Other
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item " href="about.html">About</a></li>
+              <li><a class="dropdown-item" href="contactUs.html">Contact Us</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav  mb-2 mb-lg-0 me-5">
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="logIn.html">Login</a></li>
+              <li><a class="dropdown-item" href="rgiester.html">Register</a></li>
+              <li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <!-- Start content header -->
+  <div class="header">
+    <div class="container-fluid content-headers ">
+      <div class="container-fluid  animate__animated animate__fadeInUp">
+        <div class="Tex-header">
+          <h1 class="">Welcome to our website!</h1>
+          <p class="text-danger fw-bold ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, accusantium.
+          </p>
+          <button type="button" class="btn btn-primary ps-5 pe-5 text-center">Shop Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End content header -->
+  <!-- main js -->
+  <!-- script bootstrap -->
+  <script src="js/all.min.js"></script>
+  <!-- <script src="js/bootstrap.bundle.js.map"></script> -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

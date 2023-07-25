@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-family: 'Alegreya', serif;
+}
+body {
+  height: 200000px;
+}
+.background-navbar img {
+  width: 100%;
+  height: 50px;
+}
+/* Start header */
+.header {
+  width: 100%;
+  height: 100vh;
+}
+.content-headers {
+  width: 100%;
+  height: 90%;
+  background-image: url(../img/home-Said/hero-slider-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation-name: con-header;
+  animation-duration: 6s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes con-header {
+  0% {
+    background-image: url(../img/home-Said/hero-slider-1.jpg);
+  }
+  50% {
+    background-image: url(../img/home-Said/hero-slider-2.jpg);
+  }
+}
+.Tex-header {
+  padding-top: 200px;
+}
+/* End header */
