@@ -8,7 +8,7 @@
   text-decoration: none;
 }
 body {
-  /* height: 200000px; */
+  /* height: 2000px; */
 }
 .background-navbar img {
   width: 100%;
@@ -43,3 +43,72 @@ body {
   padding-top: 200px;
 }
 /* End header */
+
+/* start serves */
+.serves:hover {
+  box-shadow: 3px 3px rgb(8, 7, 7), 1em 0 0.4em rgb(3, 3, 3);
+  cursor: pointer;
+}
+
+.banner-single-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-single-item .image-link {
+  display: block;
+}
+
+.banner-single-item .image {
+  text-align: center;
+}
+
+.banner-single-item .content {
+  position: absolute;
+  z-index: 9;
+}
+
+/*Banner Animation*/
+.banner-animation {
+  position: relative;
+}
+
+.banner-animation::before {
+  background: rgba(12, 12, 12, 0.3);
+  bottom: 0;
+  content: "";
+  left: 50%;
+  position: absolute;
+  right: 50%;
+  top: 0;
+  opacity: 1;
+  width: 0;
+}
+
+.banner-animation::after {
+  background: rgba(77, 219, 11, 0.6);
+  bottom: 50%;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  opacity: 1;
+  width: 0;
+}
+
+.banner-animation:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 0;
+  width: auto;
+  transition: all 900ms linear;
+}
+.banner-animation:hover::after {
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  width: auto;
+  transition: all 900ms linear;
+}
+/* End serves */
