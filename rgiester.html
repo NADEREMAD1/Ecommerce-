@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- main css  -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/Log_rigrster.css">
     <!-- animate CSS library for animation effects on the page-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- style css bootstrap -->
@@ -16,56 +16,80 @@
     <title>Wep Sit ECommerce</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-secondary">
-        <div class="container-fluid">
-            <a class="navbar-brand bgg" href="index.html">
-                <div class="background-navbar">
-                    <img src="img/jacket-2.jpg" alt="nav_bar_img">
+<body class="bg-success">
+    <div class="Form-Login w-75 d-flex border border-5 p-5">
+        <form class="row g-4">
+            <div class="col-md-6">
+                <label for="validationServer01" class="form-label">First name</label>
+                <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+                <!-- is-valid =< هعملها فانشكن لم اكتب اسم معين يعمل العلامة دي -->
+                <div class="valid-feedback">
+                    Looks good!
                 </div>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <i class="fa-solid fa-list"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="shop.html">Shop</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Other
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item " href="about.html">About</a></li>
-                            <li><a class="dropdown-item" href="contactUs.html">Contact Us</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <ul class="navbar-nav  mb-2 mb-lg-0 me-5">
-                    <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="logIn.html">Login</a></li>
-                            <li><a class="dropdown-item" href="rgiester.html">Register</a></li>
-                            <li>
-                        </ul>
-                    </li>
-                </ul>
             </div>
+            <div class="col-md-6">
+                <label for="validationServer02" class="form-label">Last name</label>
+                <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationServerUsername" class="form-label">Username</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                    <input type="text" class="form-control " id="validationServerUsername"
+                        aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                    <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                        Please choose a username.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <label for="validationServer03" class="form-label">City</label>
+                <input type="text" class="form-control " id="validationServer03"
+                    aria-describedby="validationServer03Feedback" required>
+                <div id="validationServer03Feedback" class="invalid-feedback">
+                    Please provide a valid city.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationServer04" class="form-label">State</label>
+                <select class="form-select " id="validationServer04" aria-describedby="validationServer04Feedback"
+                    required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>...</option>
+                </select>
+                <div id="validationServer04Feedback" class="invalid-feedback">
+                    Please select a valid state.
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationServer05" class="form-label">Zip</label>
+                <input type="text" class="form-control " id="validationServer05"
+                    aria-describedby="validationServer05Feedback" required>
+                <div id="validationServer05Feedback" class="invalid-feedback">
+                    Please provide a valid zip.
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input " type="checkbox" value="" id="invalidCheck3"
+                        aria-describedby="invalidCheck3Feedback" required>
+                    <label class="form-check-label" for="invalidCheck3">
+                        Agree to terms and conditions
+                    </label>
+                    <div id="invalidCheck3Feedback" class="invalid-feedback">
+                        You must agree before submitting.
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+        </form>
+    </div>
 
-        </div>
-    </nav>
     <!-- main js -->
     <link rel="stylesheet" href="script.js" />
     <!-- script bootstrap -->
