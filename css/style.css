@@ -7,6 +7,7 @@
   font-family: "Alegreya", serif;
   text-decoration: none;
 }
+
 body {
   /* height: 2000px; */
 }
@@ -44,12 +45,7 @@ body {
 }
 /* End header */
 
-/* start serves */
-.serves:hover {
-  box-shadow: 3px 3px rgb(8, 7, 7), 1em 0 0.4em rgb(3, 3, 3);
-  cursor: pointer;
-}
-
+/* <!-- Start Banner Single Item Tow --> */
 .banner-single-item {
   position: relative;
   overflow: hidden;
@@ -111,4 +107,12 @@ body {
   width: auto;
   transition: all 900ms linear;
 }
-/* End serves */
+/* <!-- End Banner Single Item Tow --> */
+
+.hover-service-Tow:hover {
+  box-shadow: 10px 10px rgb(63, 65, 63);
+  cursor: cell;
+}
+.dd > img:hover {
+  transform: scale(1.4) rotate(-8deg) !important;
+}
