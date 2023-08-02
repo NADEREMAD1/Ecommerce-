@@ -9,7 +9,8 @@
 }
 
 body {
-  /* height: 2000px; */
+  height: 2000px;
+  /* position: sticky; */
 }
 .background-navbar img {
   width: 100%;
@@ -115,4 +116,22 @@ body {
 }
 .dd > img:hover {
   transform: scale(1.4) rotate(-8deg) !important;
+  -webkit-transform: scale(1.4) rotate(-8deg) !important;
+  -moz-transform: scale(1.4) rotate(-8deg) !important;
+  -ms-transform: scale(1.4) rotate(-8deg) !important;
+  -o-transform: scale(1.4) rotate(-8deg) !important;
 }
+/* section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
+}
+#den {
+  display: flex;
+  flex-flow: row wrap;
+  width: 25%;
+} */
