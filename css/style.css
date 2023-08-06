@@ -5,7 +5,7 @@
   border: none;
   outline: 0;
   font-family: "Alegreya", serif;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 body {
@@ -120,4 +120,95 @@ body {
   -moz-transform: scale(1.4) rotate(-8deg) !important;
   -ms-transform: scale(1.4) rotate(-8deg) !important;
   -o-transform: scale(1.4) rotate(-8deg) !important;
+}
+/* start Shop Container */
+.product-container {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 220px;
+  background-color: #fff;
+  transition: transform 0.3s;
+  border-radius: 8px;
+  -webkit-transition: transform 0.3s;
+  -moz-transition: transform 0.3s;
+  -ms-transition: transform 0.3s;
+  -o-transition: transform 0.3s;
+}
+
+.product-container:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 5px;
+  border: 2px solid rgb(209, 203, 203);
+}
+
+.add-to-cart-button {
+  background-color: #08396e;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+.add-to-cart-button:hover {
+  background-color: #0056b3;
+}
+/* CSS */
+.catr-model::after {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  font-size: 1rem;
+  position: relative;
+  top: -5px;
+  right: 0px;
+}
+
+/* تحديد أنماط المظهر الإضافي عند زيادة العدد */
+.catr-model.show-count::after {
+  content: attr(
+    data-count
+  ); /* تعيين قيمة المتغير المخصص data-count كقيمة للعنصر */
+}
+
+.panar_shop {
+  height: 300px;
+  width: 100%;
+  background-image: url(../img/home-Said/banner-3.jpg);
+  background-size: cover;
+}
+@media (max-width: 360px) {
+  .panar_shop {
+    background-image: url(../img/home-Said/banner-style-7-img-3.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+  }
 }

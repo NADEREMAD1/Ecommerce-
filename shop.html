@@ -19,6 +19,7 @@
   </head>
 
   <body>
+    <!-- Start Navbar  -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary bg-secondary">
       <div class="container-fluid">
         <a class="navbar-brand bgg" href="index.html">
@@ -26,17 +27,6 @@
             <img src="img/jacket-2.jpg" alt="nav_bar_img" />
           </div>
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fa-solid fa-list"></i>
-        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -68,7 +58,42 @@
               </ul>
             </li>
           </ul>
+          <!-- Start Icon Cart-->
+          <a
+            class="btn btn-primary catr-model"
+            data-bs-toggle="offcanvas"
+            href="#offcanvasExample"
+            role="button"
+            aria-controls="offcanvasExample"
+          >
+            <i class="fa-regular fa-heart catr-model"></i>
+            <span id="cartCount">0</span>
+            <!-- عدد المنتجات في السلة يظهر هنا -->
+          </a>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                Offcanvas
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <h1>da</h1>
+            </div>
+          </div>
 
+          <!-- Start Icon Cart-->
+          <!-- Start LogIn-->
           <ul class="navbar-nav mb-2 mb-lg-0 me-5">
             <li class="nav-item dropdown">
               <a
@@ -89,9 +114,45 @@
               </ul>
             </li>
           </ul>
+          <!-- End LogIn-->
         </div>
+        <!-- Start Model Responsive -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-list"></i>
+        </button>
+        <!-- End  Icon Model Responsive -->
       </div>
     </nav>
+    <!-- End Navbar  -->
+    <!-- start categories -->
+    <div class="container-fluid w-75 bg-secondary p-5 mt-3">
+      <a href="#">MEN'S</a>
+      <a href="#">MEN'S</a>
+      <a href="#">MEN'S</a>
+    </div>
+    <div class="container-fluid w-75">
+      <div class="panar_shop">
+        <h1 style="color: #093d82">Panar Shop</h1>
+      </div>
+    </div>
+    <!-- End categories -->
+    <!-- Start Content shop -->
+    <div class="container mt-3 w-75">
+      <a href="#">
+        <div id="den" class="row">
+          <!-- products here  -->
+        </div>
+      </a>
+    </div>
+    <!-- Start Content shop -->
 
     <script>
       let myReq = new XMLHttpRequest();
@@ -102,30 +163,30 @@
         let Posts = myReq.response;
         for (Post of Posts) {
           den.innerHTML += `
-       <div class="col m-5 d-flex flex-column justify-content-center flex-wrap-wrap">
-        <img class="w-100" src="${Post["image"]}">
-          <h5 class=" w-100 ">${Post["title"]}</h5>
-          <button class="bttn bttn-danger">add to Cart </button>
+       <div class=" product-container col ">
+        <div class="content-Products">
+        <img class="product-image" src="${Post["image"]}">
+          <h5 class=" product-title ">${Post["title"]}</h5>
+          <h5 class=" product-price ">${Post["price"]}</h5>
+          </div>
+          <button onclick="addToCart()"
+           class="add-to-cart-button">add to Cart </button>
           </div>
             `;
-            let d = Post["title"]
-            if (d.length >= 20){
-                console.log(d);
-            }
-
         }
       };
+
+      // fetch categories
+      // fetch('https://fakestoreapi.com/products/categories')
+      //       .then(res=>res.json())
+      //       .then(json=>console.log(json))
     </script>
-    <div class="container  ">
-      <div id="den" class="row justify-content-center ">
-          <!-- products here  -->
-        </div>
-      </div>
-    </div>
+
     <!-- main js -->
     <!-- <link rel="stylesheet" href="script.js" /> -->
     <!-- script bootstrap -->
     <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
     <!-- <script src="js/bootstrap.bundle.js.map"></script> -->
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
