@@ -1,195 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- main css  -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- animate CSS library for animation effects on the page-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <!-- style css bootstrap -->
-    <!-- <link rel="stylesheet" href="css/all.min.css" /> -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css.map" /> -->
-    <title>Wep Sit ECommerce</title>
-  </head>
 
-  <body>
-    <!-- Start Navbar  -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <div class="img-navbar">
-            <img src="img/jacket-2.jpg" alt="nav_bar_img" />
-          </div>
-        </a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link text-white active"
-                aria-current="page"
-                href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="shop.html">Shop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="myBlog.html">BLOG</a>
-            </li>
-          </ul>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="img/home-Products/default-8.jpg">
+  <!-- main css  -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/shop.css" />
+  <!-- animate CSS library for animation effects on the page-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- style css bootstrap -->
+  <!-- <link rel="stylesheet" href="css/all.min.css" /> -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css.map" /> -->
+  <title>Wep Sit ECommerce</title>
+</head>
 
-          <!-- Start LogIn-->
-          <ul class="navbar-nav mb-2 mb-lg-0 me-2">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link text-white dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Login / Register
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="logIn.html">Login</a></li>
-                <li>
-                  <a class="dropdown-item" href="rgiester.html">Register</a>
-                </li>
-                <li></li>
-              </ul>
-            </li>
-          </ul>
-          <!-- End LogIn-->
-          <!-- Start Icon Cart-->
-          <a
-            class="btn btn-primary catr-model"
-            data-bs-toggle="offcanvas"
-            href="#offcanvasExample"
-            role="button"
-            aria-controls="offcanvasExample"
-          >
-            <i class="fa-regular fa-heart catr-model"></i>
-            <span id="cartCount">0</span>
-            <!-- عدد المنتجات في السلة يظهر هنا -->
-          </a>
-          <div
-            class="offcanvas offcanvas-start"
-            tabindex="-1"
-            id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-                Offcanvas
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <div class="container w-100">
-                <div class="img-canvas"></div>
-                <div class="title-canvas"></div>
-                <div class="price-canvas"></div>
-              </div>
-            </div>
-          </div>
-          <!-- End Icon Cart-->
-        </div>
-        <!-- Start Model Responsive -->
-        <button
-          class="navbar-toggler mt-2"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fa-solid fa-list"></i>
-        </button>
-        <!-- End  Icon Model Responsive -->
-      </div>
-    </nav>
-    <!-- End Navbar  -->
-    <!-- start categories -->
-    <div class="container-fluid w-100 margin-top">
-      <div class="container-fluid row d-flex">
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">TSHIRT</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              href="#"
-              role="button"
-              aria-expanded="false"
-              >Dropdown</a
-            >
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-        </ul>
-        <form class="d-flex w-75 m-auto" role="search">
-          <input
-            id="searchInput"
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-    <div class="container-fluid w-100 mt-2">
-      <div class="panar_shop">
-        <div class="p-5">
-          <h1 class="">Welcome to our website!</h1>
-          <p class="w-50 prgrph-paner">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-            temporibus ducimus pariatur tempora nam est consequatur qui, iure
-            impedit laudantium laborum? Aliquam eaque incidunt quis rem? Ipsum
-            error et adipisci?
-          </p>
-        </div>
-      </div>
-    </div>
- 
-    <!-- End categories -->
-    <!-- Start Content shop -->
-    <div class="container-fluid mt-3 w-75 fixed-right">
-      <a href="#">
-        <div id="den" class="row ">
-          <!-- products here  -->
+<body class="body-bg">
+  <!-- Start Navbar  -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <div class="img-navbar">
+          <img src="img/jacket-2.jpg" alt="nav_bar_img" />
         </div>
       </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-white active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="shop.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="myBlog.html">BLOG</a>
+          </li>
+        </ul>
+        <!-- Start LogIn-->
+        <ul class="navbar-nav mb-2 mb-lg-0 me-2">
+          <li class="nav-item dropdown">
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"
+              class="btn btn-outline-success active">Sign Up</button>
+          </li>
+        </ul>
+        <!-- End LogIn-->
+        <!-- Start Icon Cart-->
+        <a class="btn btn-primary catr-model" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+          aria-controls="offcanvasExample">
+          <i class="fa-regular fa-heart catr-model"></i>
+          <span id="cartCount">0</span>
+          <!-- عدد المنتجات في السلة يظهر هنا -->
+        </a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+              Offcanvas
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="container w-100">
+              <div class="img-canvas"></div>
+              <div class="title-canvas"></div>
+              <div class="price-canvas"></div>
+            </div>
+          </div>
+        </div>
+        <!-- End Icon Cart-->
+      </div>
+      <!-- Start Model Responsive -->
+      <button class="navbar-toggler mt-2" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fa-solid fa-list"></i>
+      </button>
+      <!-- End  Icon Model Responsive -->
     </div>
-    <!-- End Content shop -->
-      <!-- START FOOTER  -->
+  </nav>
+  <!-- End Navbar  -->
+  <!-- Start Modal LOgin -->
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+      title="Close Modal">&times;</span>
+    <form class="modal-content" action="/action_page.php">
+      <div class="container-login">
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'"
+            class="cancelbtn">Cancel</button>
+          <button type="submit" class="signupbtn">Sign Up</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- End Modal LOgin -->
+  <!-- start categories -->
+  <div class="container-fluid w-100 margin-top">
+    <div class="container-fluid row d-flex">
+      <ul class="nav justify-content-center border border-2px w-50 m-auto mb-5 mt-5">
+        <li class="nav-item ">
+          <a class="nav-link text-white active" aria-current="page" href="#">TSHIRT</a>
+        </li>
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button"
+            aria-expanded="false">Dropdown</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link text-white" href="#">Link</a>
+        </li>
+      </ul>
+      <form class="d-flex w-75 m-auto" role="search">
+        <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+  <div class="container-fluid w-75 mt-2">
+    <div class="panar_shop">
+      <div class="p-5">
+        <h1 class="">Welcome to our website!</h1>
+        <p class="w-50 prgrph-paner">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+          temporibus ducimus pariatur tempora nam est consequatur qui, iure
+          impedit laudantium laborum? Aliquam eaque incidunt quis rem? Ipsum
+          error et adipisci?
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- End categories -->
+  <!-- Start Content shop -->
+  <div class="container-fluid mt-3 w-100 bg- ">
+    <a href="#">
+      <div id="den" class="row  p-5">
+        <!-- products here  -->
+      </div>
+    </a>
+  </div>
+  <!-- End Content shop -->
+  <!-- MAIN (Center website) -->
+
+  <div class="main">
+    <h1>MYLOGO.COM</h1>
+    <hr>
+    <h2>PORTFOLIO</h2>
+    <div id="myBtnContainer">
+      <button class="btn btn-outline-success text-white active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn btn-outline-success text-white" onclick="filterSelection('nature')"> Nature</button>
+      <button class="btn btn-outline-success text-white" onclick="filterSelection('cars')"> Cars</button>
+      <button class="btn btn-outline-success text-white" onclick="filterSelection('people')"> People</button>
+    </div>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row w-100 ">
+      <div class=" col col-12 col-lg-3 col-md-6 column nature">
+        <div class="content">
+          <img src="img/home-Products/default-1.jpg" alt="Mountains" style="width:100%">
+          <h4>Mountains</h4>
+          <p>Lorem ipsum dolor..</p>
+          <button class="btn btn-primary ps-4 pe-4" onclick="addToCart()">Add To Cart</button>
+        </div>
+      </div>
+      <div class="col col-12 col-lg-3 col-md-6 column nature">
+        <div class="content">
+          <img src="img/home-Products/default-2.jpg" alt="Lights" style="width:100%">
+          <h4>Lights</h4>
+          <p>Lorem ipsum dolor..</p>
+          <button class="btn btn-primary ps-4 pe-4" onclick="addToCart()">Add To Cart</button>
+        </div>
+      </div>
+      <div class="col col-12 col-lg-3 col-md-6 column nature">
+        <div class="content">
+          <img src="img/home-Products/default-3.jpg" alt="Nature" style="width:100%">
+          <h4>Forest</h4>
+          <p>Lorem ipsum dolor..</p>
+          <button class="btn btn-primary ps-4 pe-4" onclick="addToCart()">Add To Cart</button>
+        </div>
+      </div>
+
+      <div class="col col-12 col-lg-3 col-md-6 column cars">
+        <div class="content">
+          <img src="img/home-Products/default-4.jpg" alt="Car" style="width:100%">
+          <h4>Retro</h4>
+          <p>Lorem ipsum dolor..</p>
+          <button class="btn btn-primary ps-4 pe-4" onclick="addToCart()">Add To Cart</button>
+        </div>
+      </div>
+      <div class="col col-12 col-lg-3 col-md-6 column cars">
+        <div class="content">
+          <img src="img/home-Products/default-5.jpg" alt="Car" style="width:100%">
+          <h4>Fast</h4>
+          <p>Lorem ipsum dolor..</p>
+          <button class="btn btn-primary ps-4 pe-4" onclick="addToCart()">Add To Cart</button>
+        </div>
+      </div>
+      <div class="col col-12 col-lg-3 col-md-6 column cars">
+        <div class="content">
+          <img src="img/home-Products/default-6.jpg" alt="Car" style="width:100%">
+          <h4>Classic</h4>
+          <p>Lorem ipsum dolor..</p>
+          <button class="btn btn-primary ps-4 pe-4" onclick="addToCart()">Add To Cart</button>
+        </div>
+      </div>
+
+      <div class="col col-12 col-lg-3 col-md-6 column people">
+        <div class="content">
+          <img src="img/home-Products/default-7.jpg" alt="Car" style="width:100%">
+          <h4>Girl</h4>
+          <p>Lorem ipsum dolor..</p>
+          <button class="btn btn-primary ps-4 pe-4" onclick="addToCart()">Add To Cart</button>
+        </div>
+      </div>
+      <div class="col col-12 col-lg-3 col-md-6 column people">
+        <div class="content">
+          <img src="img/home-Products/default-8.jpg" alt="Car" style="width:100%">
+          <h4>Man</h4>
+          <p>Lorem ipsum dolor..</p>
+          <button class="btn btn-primary ps-4 pe-4" onclick="addToCart()">Add To Cart</button>
+        </div>
+      </div>
+      <!-- END GRID -->
+    </div>
+  </div>
+  <!-- END MAIN -->
+  <!-- START FOOTER  -->
   <footer class="container-fluid pt-5 mt-1">
-    <div class="row"> 
+    <div class="row">
       <div class="col-4 col-lg-4 col-md-4 ">
         <ul>
           <li><a href="#" class="text-white">Women</a></li>
@@ -199,7 +264,7 @@
           <li><a href="#" class="text-white">Contact </a></li>
         </ul>
       </div>
-         <div class="col-4 col-lg-4 col-md-4 ">
+      <div class="col-4 col-lg-4 col-md-4 ">
         <ul>
           <li><a href="#" class="text-white">Women</a></li>
           <li><a href="#" class="text-white">Men</a></li>
@@ -215,11 +280,11 @@
           <li><a href="#" class="text-white">Store Policy</a></li>
           <li><a href="#" class="text-white">FAQ</a></li>
         </ul>
-           <ul class="d-flex">
-              <li><a href="#" class="text-white"><i class="fa-brands fa-facebook me-2 fs-5"  ></i> </a></li>
-              <li><a href="#" class="text-white"><i class="fa-brands fa-twitter me-2 fs-5"  ></i></a></li>
-              <li><a href="#" class="text-white"><i class="fa-brands fa-linkedin me-2 fs-5"  ></i></a></li>
-            </ul>
+        <ul class="d-flex">
+          <li><a href="#" class="text-white"><i class="fa-brands fa-facebook me-2 fs-5"></i> </a></li>
+          <li><a href="#" class="text-white"><i class="fa-brands fa-twitter me-2 fs-5"></i></a></li>
+          <li><a href="#" class="text-white"><i class="fa-brands fa-linkedin me-2 fs-5"></i></a></li>
+        </ul>
       </div>
       <div class="col-12 col-lg-12 col-md-12">
         <ul>
@@ -232,8 +297,8 @@
     </div>
   </footer>
   <!-- END FOOTER  -->
-    <!-- start Hide Clicked Right  -->
-  <div class="position">
+  <!-- start Hide Clicked Right  -->
+  <!-- <div class="position">
     <div class="containerr" >
         <table style="text-align: left; width: 99%; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
             <tbody>
@@ -260,15 +325,16 @@
             </tbody>
         </table>
     </div>
-</div>
+</div> -->
   <!-- End Hide Clicked Right  -->
-    <!-- main js -->
-    <!-- <link rel="stylesheet" href="script.js" /> -->
-    <!-- script bootstrap -->
-    <script src="js/all.min.js"></script>
-    <script src="js/script/main.js"></script>
-    <script src="./js/script/shop.js"></script>
-    <!-- <script src="js/bootstrap.bundle.js.map"></script> -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-  </body>
+  <!-- main js -->
+  <!-- <link rel="stylesheet" href="script.js" /> -->
+  <!-- script bootstrap -->
+  <script src="js/all.min.js"></script>
+  <!-- <script src="js/script/main.js"></script> -->
+  <script src="./js/script/shop.js"></script>
+  <!-- <script src="js/bootstrap.bundle.js.map"></script> -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

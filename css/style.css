@@ -15,6 +15,13 @@
 body {
   /* height: 2000px; */
 }
+.body-bg {
+  background: radial-gradient(
+    circle,
+    rgb(119, 62, 50) 10%,
+    rgb(253, 140, 123) 89%
+  );
+}
 .navbar {
   /* box-shadow: 10px 5px 10px #2b72e3 inset, 10px 10px 10px #603706 inset; */
   /* margin-bottom: 20px; */
@@ -26,6 +33,120 @@ body {
 }
 .margin-top {
   margin-top: 100px;
+}
+/*  Start modal Log In */
+
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+.cancelbtn,
+.signupbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.cancelbtn:hover,
+.signupbtn:hover {
+  opacity: 1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container-login {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
 }
 /* Start header */
 .header {
@@ -58,6 +179,7 @@ body {
   padding-top: 200px;
 }
 /* End header */
+
 /* Start Said Service  */
 .service {
   color: #0d6efd;
@@ -207,8 +329,9 @@ footer {
 }
 /* End scrollbar */
 /* Start Shop Style */
+
 .add-to-cart-button {
-  background-color: var(--main-color);
+  background-color: var(--main-color) !important;
 }
 
 .product-container {
@@ -218,7 +341,7 @@ footer {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   text-align: center;
   max-width: 220px;
-  background-color: #fff;
+  background-color: #ffffff00;
   transition: transform 0.3s;
   border-radius: 8px;
 }
@@ -285,7 +408,7 @@ footer {
 .panar_shop {
   height: 300px;
   width: 100%;
-  background-image: url(../img/home-Said/banner-3.jpg);
+  background-image: url(../img/home-Said/hero-slider-1.jpg);
   background-size: cover;
   background-position: center;
   overflow: hidden;
