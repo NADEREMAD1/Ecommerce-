@@ -8,24 +8,31 @@
   text-decoration: none !important;
   list-style: none;
 }
-
-body {
-  height: 2000px;
-  /* position: sticky; */
+:root {
+  --main-color: #008080;
+  --scound-color: skyblue;
 }
-.background-navbar img {
+body {
+  /* height: 2000px; */
+}
+.navbar {
+  /* box-shadow: 10px 5px 10px #2b72e3 inset, 10px 10px 10px #603706 inset; */
+  /* margin-bottom: 20px; */
+  background-color: #008080;
+}
+.img-navbar img {
   width: 100%;
   height: 50px;
 }
-.navbar {
-  box-shadow: 10px 5px 10px #cfcad4, 10px 10px 10px #fdfbff;
-  margin-bottom: 20px;
+.margin-top {
+  margin-top: 100px;
 }
-
 /* Start header */
 .header {
+  margin-top: 70px;
   width: 100%;
   height: 100vh;
+  margin-bottom: -30px;
 }
 .content-headers {
   width: 100%;
@@ -51,6 +58,37 @@ body {
   padding-top: 200px;
 }
 /* End header */
+/* Start Said Service  */
+.service {
+  color: #0d6efd;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid var(--main-color);
+  width: 250px;
+  margin: 0px auto;
+}
+.hover-service-Tow {
+  box-shadow: 5px 0px 5px 0px darkgrey;
+  border-radius: 30px;
+  background-color: #f6f6f6;
+}
+.hover-service-one {
+  box-shadow: 5px 0px 5px 0px darkgrey;
+  border-radius: 10px;
+  background-color: #f6f6f6;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.hover-service-Tow:hover,
+.hover-service-one:hover {
+  transform: translateY(-9px) !important;
+  -webkit-transform: translateY(-9px) !important;
+  -moz-transform: translateY(-9px) !important;
+  -ms-transform: translateY(-9px) !important;
+  -o-transform: translateY(-9px) !important;
+}
+/* End Said Service  */
 
 /* <!-- Start Banner Single Item Tow --> */
 .banner-single-item {
@@ -77,7 +115,7 @@ body {
 }
 
 .banner-animation::before {
-  background: rgba(12, 12, 12, 0.3);
+  background: var(--main-color);
   bottom: 0;
   content: "";
   left: 50%;
@@ -89,7 +127,7 @@ body {
 }
 
 .banner-animation::after {
-  background: rgba(77, 219, 11, 0.6);
+  background: var(--scound-color);
   bottom: 50%;
   content: "";
   left: 0;
@@ -116,21 +154,63 @@ body {
 }
 /* <!-- End Banner Single Item Tow --> */
 
-.hover-service-Tow:hover {
-  box-shadow: 10px 10px rgb(63, 65, 63);
-  cursor: cell;
+/* start BLOG */
+.imge-blog-content-one,
+.imge-blog-content-tow,
+.imge-blog-content-three,
+.imge-blog-content-for {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.comp {
-  margin: auto 20px auto;
+.imge-blog-content-one {
+  background-image: url(../img/home-Said/woods.jpg);
 }
-.comp > img:hover {
-  transform: scale(1.4) rotate(-8deg) !important;
-  -webkit-transform: scale(1.4) rotate(-8deg) !important;
-  -moz-transform: scale(1.4) rotate(-8deg) !important;
-  -ms-transform: scale(1.4) rotate(-8deg) !important;
-  -o-transform: scale(1.4) rotate(-8deg) !important;
+.imge-blog-content-tow {
+  background-image: url(../img/home-Said/banner-style-7-img-2.jpg);
 }
-/* start Shop Container */
+.imge-blog-content-three {
+  background-image: url(../img/home-Said/banner-style-7-img-3.jpg);
+}
+.imge-blog-content-for {
+  background-image: url(../img/home-Said/banner-style-7-img-3.jpg);
+}
+/* start footer */
+footer {
+  background-color: var(--main-color);
+}
+
+/* End footer */
+/* Start scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+/* End scrollbar */
+/* Start Shop Style */
+.add-to-cart-button {
+  background-color: var(--main-color);
+}
+
 .product-container {
   margin: 10px;
   padding: 10px;
@@ -141,10 +221,6 @@ body {
   background-color: #fff;
   transition: transform 0.3s;
   border-radius: 8px;
-  -webkit-transition: transform 0.3s;
-  -moz-transition: transform 0.3s;
-  -ms-transition: transform 0.3s;
-  -o-transition: transform 0.3s;
 }
 
 .product-container:hover {
@@ -211,19 +287,55 @@ body {
   width: 100%;
   background-image: url(../img/home-Said/banner-3.jpg);
   background-size: cover;
+  background-position: center;
+  overflow: hidden;
 }
-@media (max-width: 360px) {
+@media (max-width: 494px) {
   .panar_shop {
-    background-image: url(../img/home-Said/banner-style-7-img-3.jpg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 300px;
+    display: none;
   }
 }
+/* ----------------------- */
+.position {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  z-index: 2;
+  display: none;
+}
 
-/* <div class="container-fluid w-100">
-      <div class="panar_shop">
-        <h1 style="color: #093d82">Panar Shop</h1>
-      </div>
-    </div> --> */
+.containerr {
+  width: 220px;
+  height: auto;
+  border: 1px solid black;
+  background: rgb(245, 243, 243);
+}
+
+.containerr p {
+  height: 30px;
+  font-size: 18px;
+  font-family: arial;
+  width: 99%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(245, 243, 243);
+  color: black;
+  transition: 0.2s;
+}
+
+.containerr p:hover {
+  background: lightblue;
+}
+
+td {
+  font-family: arial;
+  font-size: 20px;
+}
+
+td:hover {
+  background: lightblue;
+  transition: 0.2s;
+  cursor: pointer;
+}

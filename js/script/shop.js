@@ -12,8 +12,8 @@ myReq.onload = function () {
     den.innerHTML = "";
     for (Post of products) {
       den.innerHTML += `
-        <div class="product-container col">
-          <div class="content-Products">
+        <div class="product-container col  ">
+          <div class="content-Products ">
             <img class="product-image" src="${Post["image"]}">
             <h5 class="product-title">${Post["title"]}</h5>
             <h5 class="product-price">${Post["price"]}</h5>
