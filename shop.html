@@ -72,12 +72,68 @@
             </h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <div class="offcanvas-body">
-            <div class="container w-100">
-              <div class="img-canvas"></div>
-              <div class="title-canvas"></div>
-              <div class="price-canvas"></div>
+            <div class="offcanvas-body">
+            <div class="container d-flex p-3 justify-content-between border border-dark">
+              <div class="img-offcanvace w-25">
+                <img class="w-100" src="img/home-Products/default-2.jpg" alt="">
+              </div>
+              <div class="text-center mt-3">
+                <p>product</p>
+                <span>1 x $49.00</span>
+              </div>
+              <div class="dleat-order ">
+                <i class="fa-solid fa-trash-can text-danger"></i>
+              </div>
             </div>
+            <div class="container d-flex p-3 justify-content-between border border-dark mt-3">
+              <div class="img-offcanvace w-25">
+                <img class="w-100" src="img/home-Products/default-3.jpg" alt="">
+              </div>
+              <div>
+                <p>product</p>
+                <span>1 x $30.00</span>
+              </div>
+              <div class="dleat-order  ">
+                <i class="fa-solid fa-trash-can text-danger"></i>
+              </div>
+            </div>
+            <div class="container d-flex p-3 justify-content-between border border-dark mt-3">
+              <div class="img-offcanvace w-25">
+                <img class="w-100" src="img/home-Products/default-4.jpg" alt="">
+              </div>
+              <div>
+                <p>product</p>
+                <span>1 x $30.00</span>
+              </div>
+              <div class="dleat-order  ">
+                <i class="fa-solid fa-trash-can text-danger"></i>
+              </div>
+            </div>
+            <div class="container d-flex p-3 justify-content-between border border-dark mt-3">
+              <div class="img-offcanvace w-25">
+                <img class="w-100" src="img/home-Products/default-5.jpg" alt="">
+              </div>
+              <div>
+                <p>product</p>
+                <span>1 x $30.00</span>
+              </div>
+              <div class="dleat-order  ">
+                <i class="fa-solid fa-trash-can text-danger"></i>
+              </div>
+            </div>
+            <div class="totle-offcanvac mt-3">
+              <div class="d-flex">
+                <h5 class="w-75">Subtotal: </h5>
+                <strong>$678,00</strong>
+              </div>
+              <div class="d-flex">
+                <h5 class="w-75"> Shipping:</h5>
+                <small>(free)</small>
+              </div>
+              <button class="w-100 btn m-2 text-white" type="button">VIEW CART</button>
+              <button class="w-100 btn m-2 text-white" type="button">CHECKOUT</button>
+            </div>
+            <!-- end of offcanvas -->
           </div>
         </div>
         <!-- End Icon Cart-->
@@ -128,39 +184,24 @@
   <!-- start categories -->
   <div class="container-fluid w-100 margin-top">
     <div class="container-fluid row d-flex">
-      <ul class="nav justify-content-center border border-2px w-50 m-auto mb-5 mt-5">
-        <li class="nav-item ">
-          <a class="nav-link    active" aria-current="page" href="#">TSHIRT</a>
-        </li>
-        <li class="nav-item dropdown ">
-          <a class="nav-link dropdown-toggle   " data-bs-toggle="dropdown" href="#" role="button"
-            aria-expanded="false">Dropdown</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link   " href="#">Link</a>
-        </li>
-      </ul>
       <form class="d-flex w-75 m-auto" role="search">
         <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <button class="btn btn-outline-success text-white" type="submit">Search</button>
       </form>
     </div>
   </div>
-  <div class="container-fluid w-75 mt-2">
+  <div class="container-fluid w-100 mt-2">
     <div class="panar_shop">
       <div class="p-5">
-        <h1 class="">Welcome to our website!</h1>
-        <p class="w-50 prgrph-paner">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-          temporibus ducimus pariatur tempora nam est consequatur qui, iure
-          impedit laudantium laborum? Aliquam eaque incidunt quis rem? Ipsum
-          error et adipisci?
-        </p>
+         <h1 class="font-700">Welcome to our website! </h1>
+          <h3 class="font-700">Shopping And
+            Department Store.</h3>
+          <p class="font-700">
+            Shopping is a bit of a relaxing hobby for me, which is<br> sometimes troubling for the bank balance.
+          </p>
+          <button type="button" class="btn btn-primary ps-5 pe-5 text-center">
+            Shop Now
+          </button>
       </div>
     </div>
   </div>
@@ -177,14 +218,13 @@
   <!-- MAIN (Center website) -->
 
   <div class="main">
-    <h1>MYLOGO.COM</h1>
-    <hr>
     <h2>PORTFOLIO</h2>
-    <div id="myBtnContainer">
-      <button class="btn btn-outline-success    active" onclick="filterSelection('all')"> Show all</button>
-      <button class="btn btn-outline-success   " onclick="filterSelection('nature')"> Nature</button>
-      <button class="btn btn-outline-success   " onclick="filterSelection('cars')"> Cars</button>
-      <button class="btn btn-outline-success   " onclick="filterSelection('people')"> People</button>
+    <hr>
+    <div id="myBtnContainer ">
+      <button class="btn text-white active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn text-white" onclick="filterSelection('nature')"> Nature</button>
+      <button class="btn text-white" onclick="filterSelection('cars')"> Cars</button>
+      <button class="btn text-white" onclick="filterSelection('people')"> People</button>
     </div>
 
     <!-- Portfolio Gallery Grid -->
@@ -262,43 +302,45 @@
   <!-- START FOOTER  -->
   <footer class="container-fluid pt-5 mt-1">
     <div class="row">
-      <div class="col-4 col-lg-4 col-md-4 ">
+      <div class="col-6 col-lg-4 col-md-4">
         <ul>
-          <li><a href="#" class=" text-white ">Women</a></li>
+          <li><a href="#" class="text-white">Women</a></li>
           <li><a href="#" class="text-white">Men</a></li>
           <li><a href="#" class="text-white">Accessories</a></li>
           <li><a href="#" class="text-white">About</a></li>
           <li><a href="#" class="text-white">Contact </a></li>
         </ul>
       </div>
-      <div class="col-4 col-lg-4 col-md-4 ">
+      <div class="col-6 col-lg-4 col-md-4">
         <ul>
-          <li><a href="#" class="text-white">Women</a></li>
-          <li><a href="#" class="text-white">Men</a></li>
-          <li><a href="#" class="text-white">Accessories</a></li>
-          <li><a href="#" class="text-white">About</a></li>
-          <li><a href="#" class="text-white" class="text-white">Contact </a></li>
+          <li><a href="#" class="text-white">My account</a></li>
+          <li><a href="#" class="text-white">Wishlist</a></li>
+          <li><a href="#" class="text-white">Privacy Policy</a></li>
+          <li><a href="#" class="text-white">Frequently Questions
+</a>
+</li>
+          <li><a href="#" class="text-white" class="text-white">Order History </a></li>
         </ul>
       </div>
-      <div class="col-4 col-lg-4 col-md-4  ">
+      <div class="col-12 col-lg-4 col-md-4">
         <ul>
           <li><a href="#" class="text-white">Shipping & Returns</a></li>
           <li><a href="#" class="text-white">Store Policy</a></li>
           <li><a href="#" class="text-white">Store Policy</a></li>
           <li><a href="#" class="text-white">FAQ</a></li>
         </ul>
-        <ul class="d-flex">
-          <li><a href="#" class="text-white"><i class="fa-brands fa-facebook me-2 fs-5"></i> </a></li>
-          <li><a href="#" class="text-white"><i class="fa-brands fa-twitter me-2 fs-5"></i></a></li>
-          <li><a href="#" class="text-white"><i class="fa-brands fa-linkedin me-2 fs-5"></i></a></li>
-        </ul>
       </div>
       <div class="col-12 col-lg-12 col-md-12">
         <ul>
-          <li class="text-white">
+          <li class="text-warning">
             Join our mailing list and get 10% off your purchase
           </li>
-          <li><input type="email" placeholder="Enter Your Email" class="rounded w-25 p-2"></input></li>
+          <li><input class="rounded w-75 p-2 mt-2" type="email" placeholder="Enter Your Email" ></input></li>
+        </ul>
+            <ul class="d-flex">
+          <li><a href="#" class="text-warning"><i class="fa-brands fa-facebook me-2 fs-5"></i> </a></li>
+          <li><a href="#" class="text-warning"><i class="fa-brands fa-twitter me-2 fs-5"></i></a></li>
+          <li><a href="#" class="text-warning"><i class="fa-brands fa-linkedin me-2 fs-5"></i></a></li>
         </ul>
       </div>
     </div>

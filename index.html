@@ -28,120 +28,201 @@
 
 <body>
   <!-- Start Navbar  -->
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <div class="img-navbar">
-          <img src="img/jacket-2.jpg" alt="nav_bar_img" />
-        </div>
-      </a>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link text-white active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="shop.html">Shop</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="myBlog.html">BLOG</a>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <div class="img-navbar">
+            <img src="img/jacket-2.jpg" alt="nav_bar_img" />
+          </div>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link text-white active"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="myBlog.html">BLOG</a>
+            </li>
+          </ul>
 
-        <!-- Start LogIn-->
+          <!-- Start LogIn-->
+          <ul class="navbar-nav mb-2 mb-lg-0 me-2">
+            <li class="nav-item dropdown">
+                    <!-- Start LogIn-->
         <ul class="navbar-nav mb-2 mb-lg-0 me-2">
           <li class="nav-item dropdown">
-            <!-- Start LogIn-->
-            <ul class="navbar-nav mb-2 mb-lg-0 me-2">
-              <li class="nav-item dropdown">
-                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"
-                  class="btn btn-outline-success active">Sign Up</button>
-              </li>
-            </ul>
-            <!-- End LogIn-->
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"
+              class="btn btn-outline-success active">Sign Up</button>
           </li>
         </ul>
         <!-- End LogIn-->
-        <!-- Start Icon Cart-->
-        <a class="btn btn-primary catr-model" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-          aria-controls="offcanvasExample">
-          <i class="fa-regular fa-heart catr-model"></i>
-          <span id="cartCount">0</span>
-          <!-- عدد المنتجات في السلة يظهر هنا -->
-        </a>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-          aria-labelledby="offcanvasExampleLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-              Offcanvas
-            </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <div class="container w-100">
-              <div class="img-canvas"></div>
-              <div class="title-canvas"></div>
-              <div class="price-canvas"></div>
+            </li>
+          </ul>
+          <!-- End LogIn-->
+          <!-- Start Icon Cart-->
+          <a
+            class="btn btn-primary catr-model"
+            data-bs-toggle="offcanvas"
+            href="#offcanvasExample"
+            role="button"
+            aria-controls="offcanvasExample"
+          >
+            <i class="fa-regular fa-heart catr-model"></i>
+            <span id="cartCount">0</span>
+            <!-- عدد المنتجات في السلة يظهر هنا -->
+          </a>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                Offcanvas
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
             </div>
+           <div class="offcanvas-body">
+            <div class="container d-flex p-3 justify-content-between border border-dark">
+              <div class="img-offcanvace w-25">
+                <img class="w-100" src="img/home-Products/default-2.jpg" alt="">
+              </div>
+              <div class="text-center mt-3">
+                <p>product</p>
+                <span>1 x $49.00</span>
+              </div>
+              <div class="dleat-order ">
+                <i class="fa-solid fa-trash-can text-danger"></i>
+              </div>
+            </div>
+            <div class="container d-flex p-3 justify-content-between border border-dark mt-3">
+              <div class="img-offcanvace w-25">
+                <img class="w-100" src="img/home-Products/default-3.jpg" alt="">
+              </div>
+              <div>
+                <p>product</p>
+                <span>1 x $30.00</span>
+              </div>
+              <div class="dleat-order  ">
+                <i class="fa-solid fa-trash-can text-danger"></i>
+              </div>
+            </div>
+            <div class="container d-flex p-3 justify-content-between border border-dark mt-3">
+              <div class="img-offcanvace w-25">
+                <img class="w-100" src="img/home-Products/default-4.jpg" alt="">
+              </div>
+              <div>
+                <p>product</p>
+                <span>1 x $30.00</span>
+              </div>
+              <div class="dleat-order  ">
+                <i class="fa-solid fa-trash-can text-danger"></i>
+              </div>
+            </div>
+            <div class="container d-flex p-3 justify-content-between border border-dark mt-3">
+              <div class="img-offcanvace w-25">
+                <img class="w-100" src="img/home-Products/default-5.jpg" alt="">
+              </div>
+              <div>
+                <p>product</p>
+                <span>1 x $30.00</span>
+              </div>
+              <div class="dleat-order  ">
+                <i class="fa-solid fa-trash-can text-danger"></i>
+              </div>
+            </div>
+            <div class="totle-offcanvac mt-3">
+              <div class="d-flex">
+                <h5 class="w-75">Subtotal: </h5>
+                <strong>$678,00</strong>
+              </div>
+              <div class="d-flex">
+                <h5 class="w-75"> Shipping:</h5>
+                <small>(free)</small>
+              </div>
+              <button class="w-100 btn m-2 text-white" type="button">VIEW CART</button>
+              <button class="w-100 btn m-2 text-white" type="button">CHECKOUT</button>
+            </div>
+            <!-- end of offcanvas -->
           </div>
+          </div>
+          <!-- End Icon Cart-->
         </div>
-        <!-- End Icon Cart-->
+        <!-- Start Model Responsive -->
+        <button
+          class="navbar-toggler mt-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-list"></i>
+        </button>
+        <!-- End  Icon Model Responsive -->
       </div>
-      <!-- Start Model Responsive -->
-      <button class="navbar-toggler mt-2" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <i class="fa-solid fa-list"></i>
-      </button>
-      <!-- End  Icon Model Responsive -->
-    </div>
-    <!-- Start Modal LOgin -->
-    <div id="id01" class="modal">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close"
-        title="Close Modal">&times;</span>
-      <form class="modal-content" action="/action_page.php">
-        <div class="container-login">
-          <h1>Sign Up</h1>
-          <p>Please fill in this form to create an account.</p>
-          <hr>
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required>
+    </nav>
+    <!-- End Navbar  -->
+      <!-- Start Modal LOgin -->
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+      title="Close Modal">&times;</span>
+    <form class="modal-content" action="/action_page.php">
+      <div class="container-login">
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
 
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
 
-          <label for="psw-repeat"><b>Repeat Password</b></label>
-          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
 
-          <label>
-            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-          </label>
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
 
-          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
-          <div class="clearfix">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'"
-              class="cancelbtn">Cancel</button>
-            <button type="submit" class="signupbtn">Sign Up</button>
-          </div>
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'"
+            class="cancelbtn">Cancel</button>
+          <button type="submit" class="signupbtn">Sign Up</button>
         </div>
-      </form>
-    </div>
-    <!-- Start Modal LOgin -->
-  </nav>
-  <!-- End Navbar  -->
+      </div>
+    </form>
+  </div>
+  <!-- End Modal LOgin -->
   <!-- Start content header -->
   <div class="header">
     <div class="container-fluid content-headers">
       <div class="container-fluid animate__animated animate__fadeInUp">
         <div class="Tex-header">
-          <h1 class="">Welcome to our website! </h1>
-          <h3 class="">Shopping And
+          <h1 class="font-700">Welcome to our website! </h1>
+          <h3 class="font-700">Shopping And
             Department Store.</h3>
-          <p class="">
+          <p class="font-700">
             Shopping is a bit of a relaxing hobby for me, which is<br> sometimes troubling for the bank balance.
           </p>
 
@@ -156,7 +237,8 @@
   <!-- Start Said Service -->
   <div class="container text-center">
     <div class="container">
-      <h1 class="service mb-4">SERVICE</h1>
+<h1 class="font-700">SERVICE</h1>
+    <hr class="w-25 text-center fw-100 m-auto bg-danger">
     </div>
     <div class="row mb-5">
       <div class="col-12 col-lg-3 col-md-6 border-dark m-auto" data-aos="zoom-in-right">
@@ -240,7 +322,7 @@
   </div>
   <!-- End Banner Section Tow -->
   <!--  Start Service Tow  -->
-  <div class="container mt-5 mb-5">
+  <div class="container-fluid mt-5 mb-5">
     <div class="row justify-content-center ">
       <div class="col-lg-3 col-md-6 col-sm-12 mb-4" data-aos="fade-left">
         <div class="hover-service-Tow p-3">
@@ -248,9 +330,9 @@
             <i class="fa-solid fa-link fs-1 ms-3 mt-2"></i>
           </div>
           <div class="mt-5">
-            <h5 class="text-success">
+            <h6 class="font-700 ">
               Beautiful themes that are responsive and customizable
-            </h5>
+            </h6>
             <span class="">No design skills needed. You have complete control over the
               look and feel of your website, from its layout, to content and
               colors.</span>
@@ -263,9 +345,9 @@
             <i class="fa-solid fa-wifi fs-1 ms-3 mt-2"></i>
           </div>
           <div class="mt-5">
-            <h5 class="text-success">
+            <h6 class="font-700">
               Beautiful themes that are responsive and customizable
-            </h5>
+            </h6>
             <span class="">No design skills needed. You have complete control over the
               look and feel of your website, from its layout, to content and
               colors.</span>
@@ -278,9 +360,9 @@
             <i class="fa-solid fa-code fs-1 ms-3 mt-2"></i>
           </div>
           <div class="mt-5">
-            <h5 class="text-success">
+            <h6 class="font-700">
               Beautiful themes that are responsive and customizable
-            </h5>
+            </h6>
             <span class="">No design skills needed. You have complete control over the
               look and feel of your website, from its layout, to content and
               colors.</span>
@@ -293,9 +375,9 @@
             <i class="fa-brands fa-wix fs-1 ms-3 mt-2"></i>
           </div>
           <div class="mt-5">
-            <h5 class="text-success">
+            <h6 class="font-700">
               Beautiful themes that are responsive and customizable
-            </h5>
+            </h6>
             <span class="">No design skills needed. You have complete control over the
               look and feel of your website, from its layout, to content and
               colors.</span>
@@ -307,7 +389,9 @@
   <!-- End Service Tow  -->
   <!-- Start Section Product One -->
   <div class="container-fluid text-center mb-5">
-    <h1 class="service mt-5 mb-2">PRODUCT</h1>
+<h1 class="font-700">PRODUCT</h1>
+    <hr class="w-25 text-center fw-100 m-auto bg-danger">
+
     <div class="row">
       <div class="col-10 col-lg-3 col-md-6  mt-5  m-auto" data-aos="zoom-in-right">
         <div class="hover-service-Tow p-3 ">
@@ -315,7 +399,7 @@
             <img style="width: 8rem; margin: auto" alt="" loading="lazy" src="img/home-Products/default-1.jpg" />
           </div>
           <div class="w-100 mt-5">
-            <h5>Product One</h5>
+            <h5 class="font-700">Product One</h5>
             <p>
               100% satisfaction guaranteed, or get your money back within 30
               days!
@@ -330,7 +414,7 @@
             <img style="width: 8rem; margin: auto" alt="" loading="lazy" src="img/home-Products/default-2.jpg" />
           </div>
           <div class="w-100 mt-5">
-            <h5>Product One</h5>
+            <h5 class="font-700">PRODUCT TOW</h5>
             <p>
               100% satisfaction guaranteed, or get your money back within 30
               days!
@@ -345,7 +429,7 @@
             <img style="width: 8rem; margin: auto" alt="" loading="lazy" src="img/home-Products/default-3.jpg" />
           </div>
           <div class="w-100 mt-5">
-            <h5>Product One</h5>
+            <h5 class="font-700">PRODUCT THREE</h5>
             <p>
               100% satisfaction guaranteed, or get your money back within 30
               days!
@@ -360,7 +444,7 @@
             <img style="width: 8rem; margin: auto" alt="" loading="lazy" src="img/home-Products/default-4.jpg" />
           </div>
           <div class="w-100 mt-5">
-            <h5>Product One</h5>
+            <h5 class="font-700">PRODUCT FOR</h5>
             <p>
               100% satisfaction guaranteed, or get your money back within 30
               days!
@@ -377,7 +461,7 @@
             <img style="width: 8rem; margin: auto" alt="" loading="lazy" src="img/home-Products/default-5.jpg" />
           </div>
           <div class="w-100 mt-5">
-            <h5>Product One</h5>
+            <h5 class="font-700">PRODUCT FIVE</h5>
             <p>
               100% satisfaction guaranteed, or get your money back within 30
               days!
@@ -392,7 +476,7 @@
             <img style="width: 8rem; margin: auto" alt="" loading="lazy" src="img/home-Products/default-6.jpg" />
           </div>
           <div class="w-100 mt-5">
-            <h5>Product One</h5>
+            <h5 class="font-700">PRODUCT SIX</h5>
             <p>
               100% satisfaction guaranteed, or get your money back within 30
               days!
@@ -407,7 +491,7 @@
             <img style="width: 8rem; margin: auto" alt="" loading="lazy" src="img/home-Products/default-7.jpg" />
           </div>
           <div class="w-100 mt-5">
-            <h5>Product One</h5>
+            <h5 class="font-700">PRODUCT SIVAN</h5>
             <p>
               100% satisfaction guaranteed, or get your money back within 30
               days!
@@ -422,7 +506,7 @@
             <img style="width: 8rem; margin: auto" alt="" loading="lazy" src="img/home-Products/default-8.jpg" />
           </div>
           <div class="w-100 mt-5">
-            <h5>Product One</h5>
+            <h5 class="font-700">PRODUCT EIGHT</h5>
             <p>
               100% satisfaction guaranteed, or get your money back within 30
               days!
@@ -471,7 +555,8 @@
   <!-- End Banner Section Tow -->
   <!-- start Brands  -->
   <div class="container-fluid  w-100  mt-5">
-    <h1 class="h1">Choose By Brand</h1>
+    <h1 class="font-700 text-center">Choose By Brand</h1>
+    <hr class="w-25 text-center fw-100 m-auto bg-danger">
     <div class="container">
       <div class="row justify-content-center mt-5">
         <div class="col-12 col-lg-3 col-md-6" data-aos="zoom-in-right">
@@ -480,7 +565,7 @@
               <img src="img/company-logo/brand (1).png" alt="" loading="lazy">
             </div>
             <div class="m-auto">
-              <h4>Staples</h4>
+              <h4 class="font-700">Staples</h4>
               <p>Delivery with in 24 hours</p>
             </div>
           </div>
@@ -491,7 +576,7 @@
               <img src="img/company-logo/brand (2).png" alt="" loading="lazy">
             </div>
             <div class="m-auto">
-              <h4>Staples</h4>
+              <h4 class="font-700">Staples</h4>
               <p>Delivery with in 24 hours</p>
             </div>
           </div>
@@ -502,7 +587,7 @@
               <img src="img/company-logo/brand (3).png" alt="" loading="lazy">
             </div>
             <div class="m-auto">
-              <h4>Staples</h4>
+              <h4 class="font-700">Staples</h4>
               <p>Delivery with in 24 hours</p>
             </div>
           </div>
@@ -513,7 +598,7 @@
               <img src="img/company-logo/brand (4).png" alt="" loading="lazy">
             </div>
             <div class="m-auto">
-              <h4>Staples</h4>
+              <h4 class="font-700">Staples</h4>
               <p>Delivery with in 24 hours</p>
             </div>
           </div>
@@ -526,7 +611,7 @@
               <img src="img/company-logo/brand (5).png" alt="" loading="lazy">
             </div>
             <div class="m-auto">
-              <h4>Staples</h4>
+              <h4 class="font-700">Staples</h4>
               <p>Delivery with in 24 hours</p>
             </div>
           </div>
@@ -537,7 +622,7 @@
               <img src="img/company-logo/brand (6).png" alt="" loading="lazy">
             </div>
             <div class="m-auto">
-              <h4>Staples</h4>
+              <h4 class="font-700">Staples</h4>
               <p>Delivery with in 24 hours</p>
             </div>
           </div>
@@ -548,7 +633,7 @@
               <img src="img/company-logo/brand (7).png" alt="" loading="lazy">
             </div>
             <div class="m-auto">
-              <h4>Staples</h4>
+              <h4 class="font-700">Staples</h4>
               <p>Delivery with in 24 hours</p>
             </div>
           </div>
@@ -559,7 +644,7 @@
               <img src="img/company-logo/brand (8).png" alt="" loading="lazy">
             </div>
             <div class="m-auto">
-              <h4>Staples</h4>
+              <h4 class="font-700">Staples</h4>
               <p>Delivery with in 24 hours</p>
             </div>
           </div>
@@ -571,7 +656,7 @@
   <!-- START FOOTER  -->
   <footer class="container-fluid pt-5 mt-1">
     <div class="row">
-      <div class="col-4 col-lg-4 col-md-4 ">
+      <div class="col-6 col-lg-4 col-md-4">
         <ul>
           <li><a href="#" class="text-white">Women</a></li>
           <li><a href="#" class="text-white">Men</a></li>
@@ -580,39 +665,40 @@
           <li><a href="#" class="text-white">Contact </a></li>
         </ul>
       </div>
-      <div class="col-4 col-lg-4 col-md-4 ">
+      <div class="col-6 col-lg-4 col-md-4">
         <ul>
-          <li><a href="#" class="text-white">Women</a></li>
-          <li><a href="#" class="text-white">Men</a></li>
-          <li><a href="#" class="text-white">Accessories</a></li>
-          <li><a href="#" class="text-white">About</a></li>
-          <li><a href="#" class="text-white" class="text-white">Contact </a></li>
+          <li><a href="#" class="text-white">My account</a></li>
+          <li><a href="#" class="text-white">Wishlist</a></li>
+          <li><a href="#" class="text-white">Privacy Policy</a></li>
+          <li><a href="#" class="text-white">Frequently Questions
+</a>
+</li>
+          <li><a href="#" class="text-white" class="text-white">Order History </a></li>
         </ul>
       </div>
-      <div class="col-4 col-lg-4 col-md-4  ">
+      <div class="col-12 col-lg-4 col-md-4">
         <ul>
           <li><a href="#" class="text-white">Shipping & Returns</a></li>
           <li><a href="#" class="text-white">Store Policy</a></li>
           <li><a href="#" class="text-white">Store Policy</a></li>
           <li><a href="#" class="text-white">FAQ</a></li>
         </ul>
-        <ul class="d-flex">
-          <li><a href="#" class="text-white"><i class="fa-brands fa-facebook me-2 fs-5"></i> </a></li>
-          <li><a href="#" class="text-white"><i class="fa-brands fa-twitter me-2 fs-5"></i></a></li>
-          <li><a href="#" class="text-white"><i class="fa-brands fa-linkedin me-2 fs-5"></i></a></li>
-        </ul>
       </div>
       <div class="col-12 col-lg-12 col-md-12">
         <ul>
-          <li class="text-white">
+          <li class="text-warning">
             Join our mailing list and get 10% off your purchase
           </li>
-          <li><input type="email" placeholder="Enter Your Email" class="rounded w-25 p-2"></input></li>
+          <li><input class="rounded w-75 p-2 mt-2" type="email" placeholder="Enter Your Email" ></input></li>
+        </ul>
+            <ul class="d-flex">
+          <li><a href="#" class="text-warning"><i class="fa-brands fa-facebook me-2 fs-5"></i> </a></li>
+          <li><a href="#" class="text-warning"><i class="fa-brands fa-twitter me-2 fs-5"></i></a></li>
+          <li><a href="#" class="text-warning"><i class="fa-brands fa-linkedin me-2 fs-5"></i></a></li>
         </ul>
       </div>
     </div>
   </footer>
-
   <!-- END FOOTER  -->
   <!-- start Hide Clicked Right  -->
   <!-- <div class="position">
