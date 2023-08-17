@@ -5,16 +5,18 @@
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" href="img/home-Products/default-8.jpg">
+  <link rel="icon" type="image/x-icon" href="img/home-Products/default-8.jpg">
   <!-- main css  -->
   <link rel="stylesheet" href="css/style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,600;1,400;1,500&family=Merienda:wght@300;600;700;900&display=swap"
+    rel="stylesheet">
   <!-- animate CSS library for animation effects on the page-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,600;1,400;1,500&display=swap"
-    rel="stylesheet" />
+  <link rel="stylesheet" href="aos-master/aos-master/dist/aos.css">
   <!-- style css bootstrap -->
   <!-- <link rel="stylesheet" href="css/all.min.css" /> -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -52,14 +54,14 @@
         <!-- Start LogIn-->
         <ul class="navbar-nav mb-2 mb-lg-0 me-2">
           <li class="nav-item dropdown">
-                 <!-- Start LogIn-->
-        <ul class="navbar-nav mb-2 mb-lg-0 me-2">
-          <li class="nav-item dropdown">
-            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"
-              class="btn btn-outline-success active">Sign Up</button>
-          </li>
-        </ul>
-        <!-- End LogIn-->
+            <!-- Start LogIn-->
+            <ul class="navbar-nav mb-2 mb-lg-0 me-2">
+              <li class="nav-item dropdown">
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"
+                  class="btn btn-outline-success active">Sign Up</button>
+              </li>
+            </ul>
+            <!-- End LogIn-->
           </li>
         </ul>
         <!-- End LogIn-->
@@ -96,50 +98,51 @@
       </button>
       <!-- End  Icon Model Responsive -->
     </div>
+    <!-- Start Modal LOgin -->
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close"
+        title="Close Modal">&times;</span>
+      <form class="modal-content" action="/action_page.php">
+        <div class="container-login">
+          <h1>Sign Up</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+          <div class="clearfix">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+              class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- Start Modal LOgin -->
   </nav>
   <!-- End Navbar  -->
-    <!-- Start Modal LOgin -->
-  <div id="id01" class="modal">
-    <span onclick="document.getElementById('id01').style.display='none'" class="close"
-      title="Close Modal">&times;</span>
-    <form class="modal-content" action="/action_page.php">
-      <div class="container-login">
-        <h1>Sign Up</h1>
-        <p>Please fill in this form to create an account.</p>
-        <hr>
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required>
-
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-
-        <label for="psw-repeat"><b>Repeat Password</b></label>
-        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-
-        <label>
-          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-        </label>
-
-        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
-        <div class="clearfix">
-          <button type="button" onclick="document.getElementById('id01').style.display='none'"
-            class="cancelbtn">Cancel</button>
-          <button type="submit" class="signupbtn">Sign Up</button>
-        </div>
-      </div>
-    </form>
-  </div>
-  <!-- Start Modal LOgin -->
   <!-- Start content header -->
   <div class="header">
     <div class="container-fluid content-headers">
       <div class="container-fluid animate__animated animate__fadeInUp">
         <div class="Tex-header">
-          <h1 class="">Welcome to our website!</h1>
-          <p class="text-success">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
-            accusantium. lo
+          <h1 class="">Welcome to our website! </h1>
+          <h3 class="">Shopping And
+            Department Store.</h3>
+          <p class="">
+            Shopping is a bit of a relaxing hobby for me, which is<br> sometimes troubling for the bank balance.
           </p>
 
           <button type="button" class="btn btn-primary ps-5 pe-5 text-center">
@@ -156,20 +159,20 @@
       <h1 class="service mb-4">SERVICE</h1>
     </div>
     <div class="row mb-5">
-      <div class="col border border-2 m-2 hover-service-Tow">
+      <div class="col-12 col-lg-3 col-md-6 border-dark m-auto" data-aos="zoom-in-right">
         <div class="w-100">
-          <img style="width: 8rem; margin: 20px auto" alt="" loading="lazy" src="img/icons/service-promo-5.png" />
+          <img style="width: 5rem; margin: 20px auto" alt="" loading="lazy" src="img/icons/service-promo-5.png" />
         </div>
-        <div class="w-100 mt-5">
+        <div class="w-100 mt-3">
           <h5>FREE SHIPPING</h5>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
         </div>
       </div>
-      <div class="col border border-2 m-2 hover-service-Tow">
+      <div class="col-12 col-lg-3 col-md-6 border-dark m-auto" data-aos="zoom-in-right">
         <div class="w-100">
-          <img style="width: 8rem; margin: 20px auto" alt="" loading="lazy" src="img/icons/service-promo-6.png" />
+          <img style="width: 5rem; margin: 20px auto" alt="" loading="lazy" src="img/icons/service-promo-6.png" />
         </div>
-        <div class="w-100 mt-5">
+        <div class="w-100 mt-3">
           <h5>30 DAYS MONEY BACK</h5>
           <p>
             100% satisfaction guaranteed, or get your money back within 30
@@ -177,20 +180,20 @@
           </p>
         </div>
       </div>
-      <div class="col border border-2 m-2 hover-service-Tow">
+      <div class="col-12 col-lg-3 col-md-6 border-dark m-auto" data-aos="zoom-in-right">
         <div class="w-100">
-          <img style="width: 8rem; margin: 20px auto" alt="" loading="lazy" src="img/icons/service-promo-7.png" />
+          <img style="width: 5rem; margin: 20px auto" alt="" loading="lazy" src="img/icons/service-promo-7.png" />
         </div>
-        <div class="w-100 mt-5">
+        <div class="w-100 mt-3">
           <h5>SAFE PAYMENT</h5>
           <p>Pay with the world’s most popular and secure payment methods.</p>
         </div>
       </div>
-      <div class="col border border-2 m-2 hover-service-Tow">
+      <div class="col-12 col-lg-3 col-md-6 border-dark m-auto" data-aos="zoom-in-right">
         <div class="w-100">
-          <img style="width: 8rem; margin: 20px auto" alt="" loading="lazy" src="img/icons/service-promo-8.png" />
+          <img style="width: 5rem; margin: 20px auto" alt="" loading="lazy" src="img/icons/service-promo-8.png" />
         </div>
-        <div class="w-100 mt-5">
+        <div class="w-100 mt-3">
           <h5>LOYALTY CUSTOMER</h5>
           <p>
             Card for the other 30% of their purchases at a rate of 1% cash
@@ -201,8 +204,8 @@
     </div>
   </div>
   <!-- End Said Service -->
-  <!-- Start Banner Single Item -->
-  <div class="banner-section section-top-gap-100">
+  <!-- Start Banner Single Item Tow -->
+  <div class="banner-section section-top-gap-100 ">
     <div class="banner-wrapper clearfix d-flex">
       <a href="Shop.html" class="animate__animated animate__fadeInUp">
         <div class="banner-single-item banner-style-7 banner-animation banner-color--green float-left"
@@ -235,18 +238,18 @@
       <!-- End Banner Single Item -->
     </div>
   </div>
-  <!-- End Banner Section -->
+  <!-- End Banner Section Tow -->
   <!--  Start Service Tow  -->
   <div class="container mt-5 mb-5">
-    <div class="row justify-content-center">
-      <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-        <div class="p-1 hover-service-one">
+    <div class="row justify-content-center ">
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-4" data-aos="fade-left">
+        <div class="hover-service-Tow p-3">
           <div class="d-flex flex justify-content-between">
             <i class="fa-solid fa-link fs-1 ms-3 mt-2"></i>
           </div>
           <div class="mt-5">
             <h5 class="text-success">
-              <strong>Beautiful themes that are responsive and customizable</strong>
+              Beautiful themes that are responsive and customizable
             </h5>
             <span class="">No design skills needed. You have complete control over the
               look and feel of your website, from its layout, to content and
@@ -254,14 +257,14 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-        <div class="p-1 hover-service-one">
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-4" data-aos="fade-left">
+        <div class="hover-service-Tow p-3 ">
           <div class="d-flex flex justify-content-between">
             <i class="fa-solid fa-wifi fs-1 ms-3 mt-2"></i>
           </div>
           <div class="mt-5">
             <h5 class="text-success">
-              <strong>Beautiful themes that are responsive and customizable</strong>
+              Beautiful themes that are responsive and customizable
             </h5>
             <span class="">No design skills needed. You have complete control over the
               look and feel of your website, from its layout, to content and
@@ -269,14 +272,14 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-        <div class="p-1 hover-service-one">
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-4" data-aos="fade-left">
+        <div class="hover-service-Tow p-3 ">
           <div class="d-flex flex justify-content-between">
             <i class="fa-solid fa-code fs-1 ms-3 mt-2"></i>
           </div>
           <div class="mt-5">
             <h5 class="text-success">
-              <strong>Beautiful themes that are responsive and customizable</strong>
+              Beautiful themes that are responsive and customizable
             </h5>
             <span class="">No design skills needed. You have complete control over the
               look and feel of your website, from its layout, to content and
@@ -284,14 +287,14 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-        <div class="p-1 hover-service-one">
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-4" data-aos="fade-left">
+        <div class="hover-service-Tow p-3 ">
           <div class="d-flex flex justify-content-between">
             <i class="fa-brands fa-wix fs-1 ms-3 mt-2"></i>
           </div>
           <div class="mt-5">
             <h5 class="text-success">
-              <strong>Beautiful themes that are responsive and customizable</strong>
+              Beautiful themes that are responsive and customizable
             </h5>
             <span class="">No design skills needed. You have complete control over the
               look and feel of your website, from its layout, to content and
@@ -303,113 +306,129 @@
   </div>
   <!-- End Service Tow  -->
   <!-- Start Section Product One -->
-  <div class="container text-center mb-5">
+  <div class="container-fluid text-center mb-5">
     <h1 class="service mt-5 mb-2">PRODUCT</h1>
     <div class="row">
-      <div class="col pt-3 border border-1 border-success m-3 hover-service-Tow">
-        <div class="w-100 img-one">
-          <img style="width: 8rem; margin: auto" alt="" loading="lazy" src="img/home-Products/default-9.jpg" />
-        </div>
-        <div class="w-100 mt-5">
-          <h5>Product One</h5>
-          <p>
-            100% satisfaction guaranteed, or get your money back within 30
-            days!
-          </p>
-          <button class="btn btn-primary m-2">add To Cart</button>
-        </div>
-      </div>
-      <div class="col pt-3 border border-1 border-success m-3 hover-service-Tow">
-        <div class="w-100">
-          <img style="width: 8rem; margin: auto" alt="" loading="lazy" src="img/home-Products/default-2.jpg" />
-        </div>
-        <div class="w-100 mt-5">
-          <h5>Product One</h5>
-          <p>
-            100% satisfaction guaranteed, or get your money back within 30
-            days!
-          </p>
-          <button class="btn btn-primary m-2">add To Cart</button>
+      <div class="col-10 col-lg-3 col-md-6  mt-5  m-auto" data-aos="zoom-in-right">
+        <div class="hover-service-Tow p-3 ">
+          <div class="w-100">
+            <img style="width: 8rem; margin: auto" alt="" loading="lazy" src="img/home-Products/default-1.jpg" />
+          </div>
+          <div class="w-100 mt-5">
+            <h5>Product One</h5>
+            <p>
+              100% satisfaction guaranteed, or get your money back within 30
+              days!
+            </p>
+            <button class="btn btn-primary m-2">add To Cart</button>
+          </div>
         </div>
       </div>
-      <div class="col pt-3 border border-1 border-success m-3 hover-service-Tow">
-        <div class="w-100">
-          <img style="width: 8rem; margin: auto" alt="" loading="lazy" src="img/home-Products/default-3.jpg" />
-        </div>
-        <div class="w-100 mt-5">
-          <h5>Product One</h5>
-          <p>
-            100% satisfaction guaranteed, or get your money back within 30
-            days!
-          </p>
-          <button class="btn btn-primary m-2">add To Cart</button>
+      <div class="col-10 col-lg-3 col-md-6  mt-5  m-auto" data-aos="zoom-in-right">
+        <div class="hover-service-Tow p-3 ">
+          <div class="w-100">
+            <img style="width: 8rem; margin: auto" alt="" loading="lazy" src="img/home-Products/default-2.jpg" />
+          </div>
+          <div class="w-100 mt-5">
+            <h5>Product One</h5>
+            <p>
+              100% satisfaction guaranteed, or get your money back within 30
+              days!
+            </p>
+            <button class="btn btn-primary m-2">add To Cart</button>
+          </div>
         </div>
       </div>
-      <div class="col pt-3 border border-1 border-success m-3 hover-service-Tow">
-        <div class="w-100">
-          <img style="width: 8rem; margin: auto" alt="" loading="lazy" src="img/home-Products/default-4.jpg" />
+      <div class="col-10 col-lg-3 col-md-6  mt-5  m-auto" data-aos="zoom-in-right">
+        <div class="hover-service-Tow p-3 ">
+          <div class="w-100">
+            <img style="width: 8rem; margin: auto" alt="" loading="lazy" src="img/home-Products/default-3.jpg" />
+          </div>
+          <div class="w-100 mt-5">
+            <h5>Product One</h5>
+            <p>
+              100% satisfaction guaranteed, or get your money back within 30
+              days!
+            </p>
+            <button class="btn btn-primary m-2">add To Cart</button>
+          </div>
         </div>
-        <div class="w-100 mt-5">
-          <h5>Product One</h5>
-          <p>
-            100% satisfaction guaranteed, or get your money back within 30
-            days!
-          </p>
-          <button class="btn btn-primary m-2">add To Cart</button>
+      </div>
+      <div class="col-10 col-lg-3 col-md-6  mt-5  m-auto" data-aos="zoom-in-right">
+        <div class="hover-service-Tow p-3 ">
+          <div class="w-100">
+            <img style="width: 8rem; margin: auto" alt="" loading="lazy" src="img/home-Products/default-4.jpg" />
+          </div>
+          <div class="w-100 mt-5">
+            <h5>Product One</h5>
+            <p>
+              100% satisfaction guaranteed, or get your money back within 30
+              days!
+            </p>
+            <button class="btn btn-primary m-2">add To Cart</button>
+          </div>
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col pt-3 border border-1 border-success m-3 hover-service-Tow">
-        <div class="w-100">
-          <img style="width: 8rem; margin: auto" alt="" loading="lazy" src="img/home-Products/default-5.jpg" />
-        </div>
-        <div class="w-100 mt-5">
-          <h5>Product One</h5>
-          <p>
-            100% satisfaction guaranteed, or get your money back within 30
-            days!
-          </p>
-          <button class="btn btn-primary m-2">add To Cart</button>
-        </div>
-      </div>
-      <div class="col pt-3 border border-1 border-success m-3 hover-service-Tow">
-        <div class="w-100">
-          <img style="width: 8rem; margin: auto" alt="" loading="lazy" src="img/home-Products/default-6.jpg" />
-        </div>
-        <div class="w-100 mt-5">
-          <h5>Product One</h5>
-          <p>
-            100% satisfaction guaranteed, or get your money back within 30
-            days!
-          </p>
-          <button class="btn btn-primary m-2">add To Cart</button>
+      <div class="col-10 col-lg-3 col-md-6  mt-5  m-auto" data-aos="zoom-in-right">
+        <div class="hover-service-Tow p-3 ">
+          <div class="w-100">
+            <img style="width: 8rem; margin: auto" alt="" loading="lazy" src="img/home-Products/default-5.jpg" />
+          </div>
+          <div class="w-100 mt-5">
+            <h5>Product One</h5>
+            <p>
+              100% satisfaction guaranteed, or get your money back within 30
+              days!
+            </p>
+            <button class="btn btn-primary m-2">add To Cart</button>
+          </div>
         </div>
       </div>
-      <div class="col pt-3 border border-1 border-success m-3 hover-service-Tow">
-        <div class="w-100">
-          <img style="width: 8rem; margin: auto" alt="" loading="lazy" src="img/home-Products/default-7.jpg" />
-        </div>
-        <div class="w-100 mt-5">
-          <h5>Product One</h5>
-          <p>
-            100% satisfaction guaranteed, or get your money back within 30
-            days!
-          </p>
-          <button class="btn btn-primary m-2">add To Cart</button>
+      <div class="col-10 col-lg-3 col-md-6  mt-5  m-auto" data-aos="zoom-in-right">
+        <div class="hover-service-Tow p-3 ">
+          <div class="w-100">
+            <img style="width: 8rem; margin: auto" alt="" loading="lazy" src="img/home-Products/default-6.jpg" />
+          </div>
+          <div class="w-100 mt-5">
+            <h5>Product One</h5>
+            <p>
+              100% satisfaction guaranteed, or get your money back within 30
+              days!
+            </p>
+            <button class="btn btn-primary m-2">add To Cart</button>
+          </div>
         </div>
       </div>
-      <div class="col pt-3 border border-1 border-success m-3 hover-service-Tow">
-        <div class="w-100">
-          <img style="width: 8rem; margin: auto" alt="" loading="lazy" src="img/home-Products/default-8.jpg" />
+      <div class="col-10 col-lg-3 col-md-6  mt-5  m-auto" data-aos="zoom-in-right">
+        <div class="hover-service-Tow p-3 ">
+          <div class="w-100">
+            <img style="width: 8rem; margin: auto" alt="" loading="lazy" src="img/home-Products/default-7.jpg" />
+          </div>
+          <div class="w-100 mt-5">
+            <h5>Product One</h5>
+            <p>
+              100% satisfaction guaranteed, or get your money back within 30
+              days!
+            </p>
+            <button class="btn btn-primary m-2">add To Cart</button>
+          </div>
         </div>
-        <div class="w-100 mt-5">
-          <h5>Product One</h5>
-          <p>
-            100% satisfaction guaranteed, or get your money back within 30
-            days!
-          </p>
-          <button class="btn btn-primary m-2">add To Cart</button>
+      </div>
+      <div class="col-10 col-lg-3 col-md-6  mt-5  m-auto" data-aos="zoom-in-right">
+        <div class="hover-service-Tow p-3 ">
+          <div class="w-100">
+            <img style="width: 8rem; margin: auto" alt="" loading="lazy" src="img/home-Products/default-8.jpg" />
+          </div>
+          <div class="w-100 mt-5">
+            <h5>Product One</h5>
+            <p>
+              100% satisfaction guaranteed, or get your money back within 30
+              days!
+            </p>
+            <button class="btn btn-primary m-2">add To Cart</button>
+          </div>
         </div>
       </div>
     </div>
@@ -450,36 +469,108 @@
     </div>
   </div>
   <!-- End Banner Section Tow -->
-
-  <!-- start Company  -->
-  <!-- <div class="container mt-5">
-         <h1 class="service mt-4 w-75 m-auto text-center"> Relationship Together Companies</h1>
-      </h5>
-      <div class="row d-flex justify-content-between mt-5">
-        <div class="col company-logo col-lg-2 col-md-2 col-sm-16">
-          <img src="img/company-logo/company-logo-1.png" alt="" />
+  <!-- start Brands  -->
+  <div class="container-fluid  w-100  mt-5">
+    <h1 class="h1">Choose By Brand</h1>
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-12 col-lg-3 col-md-6" data-aos="zoom-in-right">
+          <div class="content d-flex brand-hover p-3 ">
+            <div class="img">
+              <img src="img/company-logo/brand (1).png" alt="" loading="lazy">
+            </div>
+            <div class="m-auto">
+              <h4>Staples</h4>
+              <p>Delivery with in 24 hours</p>
+            </div>
+          </div>
         </div>
-        <div class="col company-logo col-lg-2 col-md-2 col-sm-16">
-          <img src="img/company-logo/company-logo-2.png" alt="" />
+        <div class="col-12 col-lg-3 col-md-6" data-aos="fade-down-left">
+          <div class="content d-flex brand-hover p-3">
+            <div class="img">
+              <img src="img/company-logo/brand (2).png" alt="" loading="lazy">
+            </div>
+            <div class="m-auto">
+              <h4>Staples</h4>
+              <p>Delivery with in 24 hours</p>
+            </div>
+          </div>
         </div>
-        <div class="col company-logo col-lg-2 col-md-2 col-sm-16">
-          <img src="img/company-logo/company-logo-3.png" alt="" />
+        <div class="col-12 col-lg-3 col-md-6" data-aos="zoom-in-right">
+          <div class="content d-flex brand-hover p-3">
+            <div class="img">
+              <img src="img/company-logo/brand (3).png" alt="" loading="lazy">
+            </div>
+            <div class="m-auto">
+              <h4>Staples</h4>
+              <p>Delivery with in 24 hours</p>
+            </div>
+          </div>
         </div>
-        <div class="col company-logo col-lg-2 col-md-2 col-sm-16">
-          <img src="img/company-logo/company-logo-4.png" alt="" />
-        </div>
-        <div class="col company-logo col-lg-2 col-md-2 col-sm-16">
-          <img src="img/company-logo/company-logo-5.png" alt="" />
-        </div>
-        <div class="col company-logo col-lg-2 col-md-2 col-sm-16">
-          <img src="img/company-logo/company-logo-5.png" alt="" />
+        <div class="col-12 col-lg-3 col-md-6" data-aos="fade-down-left">
+          <div class="content d-flex brand-hover p-3">
+            <div class="img">
+              <img src="img/company-logo/brand (4).png" alt="" loading="lazy">
+            </div>
+            <div class="m-auto">
+              <h4>Staples</h4>
+              <p>Delivery with in 24 hours</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div> -->
-  <!-- End Company  -->
+      <div class="row justify-content-center mt-2">
+        <div class="col-12 col-lg-3 col-md-6" data-aos="zoom-in-right">
+          <div class="content d-flex brand-hover p-3">
+            <div class="img">
+              <img src="img/company-logo/brand (5).png" alt="" loading="lazy">
+            </div>
+            <div class="m-auto">
+              <h4>Staples</h4>
+              <p>Delivery with in 24 hours</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6" data-aos="fade-down-left">
+          <div class="content d-flex brand-hover p-3">
+            <div class="img">
+              <img src="img/company-logo/brand (6).png" alt="" loading="lazy">
+            </div>
+            <div class="m-auto">
+              <h4>Staples</h4>
+              <p>Delivery with in 24 hours</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6" data-aos="zoom-in-right">
+          <div class="content d-flex brand-hover p-3">
+            <div class="img">
+              <img src="img/company-logo/brand (7).png" alt="" loading="lazy">
+            </div>
+            <div class="m-auto">
+              <h4>Staples</h4>
+              <p>Delivery with in 24 hours</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6" data-aos="fade-down-left">
+          <div class="content d-flex brand-hover p-3">
+            <div class="img">
+              <img src="img/company-logo/brand (8).png" alt="" loading="lazy">
+            </div>
+            <div class="m-auto">
+              <h4>Staples</h4>
+              <p>Delivery with in 24 hours</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Brands  -->
   <!-- START FOOTER  -->
   <footer class="container-fluid pt-5 mt-1">
-    <div class="row"> 
+    <div class="row">
       <div class="col-4 col-lg-4 col-md-4 ">
         <ul>
           <li><a href="#" class="text-white">Women</a></li>
@@ -489,7 +580,7 @@
           <li><a href="#" class="text-white">Contact </a></li>
         </ul>
       </div>
-         <div class="col-4 col-lg-4 col-md-4 ">
+      <div class="col-4 col-lg-4 col-md-4 ">
         <ul>
           <li><a href="#" class="text-white">Women</a></li>
           <li><a href="#" class="text-white">Men</a></li>
@@ -505,11 +596,11 @@
           <li><a href="#" class="text-white">Store Policy</a></li>
           <li><a href="#" class="text-white">FAQ</a></li>
         </ul>
-           <ul class="d-flex">
-              <li><a href="#" class="text-white"><i class="fa-brands fa-facebook me-2 fs-5"></i> </a></li>
-              <li><a href="#" class="text-white"><i class="fa-brands fa-twitter me-2 fs-5"></i></a></li>
-              <li><a href="#" class="text-white"><i class="fa-brands fa-linkedin me-2 fs-5"></i></a></li>
-            </ul>
+        <ul class="d-flex">
+          <li><a href="#" class="text-white"><i class="fa-brands fa-facebook me-2 fs-5"></i> </a></li>
+          <li><a href="#" class="text-white"><i class="fa-brands fa-twitter me-2 fs-5"></i></a></li>
+          <li><a href="#" class="text-white"><i class="fa-brands fa-linkedin me-2 fs-5"></i></a></li>
+        </ul>
       </div>
       <div class="col-12 col-lg-12 col-md-12">
         <ul>
@@ -524,41 +615,47 @@
 
   <!-- END FOOTER  -->
   <!-- start Hide Clicked Right  -->
-  <div class="position">
+  <!-- <div class="position">
     <div class="containerr" align="center">
-        <table style="text-align: left; width: 99%; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
-            <tbody>
-                <tr>
-                    <td style="vertical-align: middle; text-align: center;"><a href="index.html">Home </a><br>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="vertical-align: middle; text-align: center;"><a href="shop.html">Shop </a><br>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="vertical-align: middle; text-align: center;"><a href="about.html">About</a><br>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="vertical-align: middle; text-align: center;"><a href="myBlog.html">Blog </a><br>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="vertical-align: middle; text-align: center;"><a href="#">Option 5 </a><br>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+      <table style="text-align: left; width: 99%; margin-left: auto; margin-right: auto;" border="0" cellpadding="2"
+        cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; text-align: center;"><a href="index.html">Home </a><br>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: middle; text-align: center;"><a href="shop.html">Shop </a><br>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: middle; text-align: center;"><a href="about.html">About</a><br>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: middle; text-align: center;"><a href="myBlog.html">Blog </a><br>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: middle; text-align: center;"><a href="#">Option 5 </a><br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-</div>
+  </div> -->
   <!-- End Hide Clicked Right  -->
 
   <!-- main js -->
   <!-- script bootstrap -->
-    <script src="js/script/main.js"></script>
+  <script src="js/script/main.js"></script>
   <script src="js/all.min.js"></script>
   <!-- <script src="js/bootstrap.bundle.js.map"></script> -->
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="aos-master/aos-master/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
+
 </html>

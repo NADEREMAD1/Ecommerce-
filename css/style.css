@@ -4,24 +4,25 @@
   padding: 0;
   border: none;
   outline: 0;
-  font-family: "Alegreya", serif;
+  font-family: "Alegreya", serif !important;
+  font-family: "Merienda", cursive !important;
+  font-weight: 700 !important ;
   text-decoration: none !important;
   list-style: none;
+}
+h5 {
+  font-family: Arial, Helvetica, sans-serif !important;
+  color: #0056b3;
+  font-size: small;
+}
+button {
+  background-color: var(--main-color) !important;
 }
 :root {
   --main-color: #008080;
   --scound-color: skyblue;
 }
-body {
-  /* height: 2000px; */
-}
-.body-bg {
-  background: radial-gradient(
-    circle,
-    rgb(119, 62, 50) 10%,
-    rgb(253, 140, 123) 89%
-  );
-}
+
 .navbar {
   /* box-shadow: 10px 5px 10px #2b72e3 inset, 10px 10px 10px #603706 inset; */
   /* margin-bottom: 20px; */
@@ -189,9 +190,12 @@ hr {
   margin: 0px auto;
 }
 .hover-service-Tow {
-  box-shadow: 5px 0px 5px 0px darkgrey;
-  border-radius: 30px;
   background-color: #f6f6f6;
+  margin: 1px;
+}
+.hover-service-Tow:hover {
+  border: 2px rgb(56, 56, 88) solid;
+  margin: 0px;
 }
 .hover-service-one {
   box-shadow: 5px 0px 5px 0px darkgrey;
@@ -307,7 +311,7 @@ footer {
 /* End footer */
 /* Start scrollbar */
 /* width */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 10px;
 }
 
@@ -326,7 +330,7 @@ footer {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #b30000;
-}
+} */
 /* End scrollbar */
 /* Start Shop Style */
 
@@ -461,4 +465,13 @@ td:hover {
   background: lightblue;
   transition: 0.2s;
   cursor: pointer;
+}
+.brand-hover {
+  background-color: #ddddddbd;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.brand-hover:hover {
+  border: 1px solid rgb(0, 0, 0);
 }

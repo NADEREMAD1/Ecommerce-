@@ -1,7 +1,9 @@
 * {
   box-sizing: border-box;
 }
-
+.body-bg {
+  background-color: white;
+}
 /* Center website */
 .main {
   max-width: 1000px;
@@ -48,5 +50,3 @@ h1 {
 .show {
   display: block;
 }
-
-

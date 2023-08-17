@@ -15,9 +15,13 @@ myReq.onload = function () {
         <div class="product-container col">
           <div class="content-Products ">
             <img class="product-image " src="${Post["image"]}">
-            <h5 class="product-title text-white">${Post["title"]}</h5>
-            <h5 class="product-price text-white">${Post["price"]}</h5>
-          </div>
+            <h5 class="product-title ">${Post["title"]}</h5>
+            <h5 class="product-price ">${Post["price"]}</h5>
+        <i class="fa-regular fa-star-half-stroke" style="color: #10b5cb;"></i>
+        <i class="fa-regular fa-star-half-stroke" style="color: #10b5cb;"></i>
+        <i class="fa-regular fa-star-half-stroke" style="color: #10b5cb;"></i>
+        <i class="fa-regular fa-star-half-stroke" style="color: #10b5cb;"></i>
+         </div>
           <button onclick="addToCart()" class="add-to-cart-button">Add to Cart</button>
         </div>
       `;
