@@ -16,6 +16,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,600;1,400;1,500&family=Merienda:wght@300;600;700;900&display=swap" rel="stylesheet">
   <!-- animate CSS library for animation effects on the page-->
+  <link rel="stylesheet" href="aos-master/aos-master/dist/aos.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- style css bootstrap -->
@@ -184,9 +185,13 @@
   <!-- start categories -->
   <div class="container-fluid w-100 margin-top">
     <div class="container-fluid row d-flex">
+
       <form class="d-flex w-75 m-auto" role="search">
-        <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-        <button class="btn btn-outline-success text-white" type="submit">Search</button>
+        <input id="searchInput"
+         class="form-control me-2" 
+         type="search" placeholder="Search"
+          aria-label="Search" />
+        <button class="btn btn-outline-success text-white"type="submit">Search</button>
       </form>
     </div>
   </div>
@@ -207,7 +212,7 @@
   </div>
   <!-- End categories -->
   <!-- Start Content shop -->
-  <div class="container-fluid mt-3 w-100 bg- ">
+  <div class="container-fluid mt-3 w-100">
     <a href="#">
       <div id="den" class="row  p-5">
         <!-- products here  -->
@@ -216,20 +221,19 @@
   </div>
   <!-- End Content shop -->
   <!-- MAIN (Center website) -->
-
   <div class="main">
     <h2>PORTFOLIO</h2>
     <hr>
     <div id="myBtnContainer ">
-      <button class="btn text-white active" onclick="filterSelection('all')"> Show all</button>
-      <button class="btn text-white" onclick="filterSelection('nature')"> Nature</button>
-      <button class="btn text-white" onclick="filterSelection('cars')"> Cars</button>
-      <button class="btn text-white" onclick="filterSelection('people')"> People</button>
+      <button class="btn text-white" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn  bg-info" onclick="filterSelection('nature')"> Nature</button>
+      <button class="btn  bg-info" onclick="filterSelection('cars')"> Cars</button>
+      <button class="btn  bg-info" onclick="filterSelection('people')"> People</button>
     </div>
 
     <!-- Portfolio Gallery Grid -->
-    <div class="row w-100 ">
-      <div class=" col col-12 col-lg-3 col-md-6 column nature">
+    <div class="row w-100 " >
+      <div class=" col col-12 col-lg-3 col-md-6 column nature" data-aos="zoom-in">
         <div class="content">
           <img src="img/home-Products/default-1.jpg" alt="Mountains" style="width:100%">
           <h4>Mountains</h4>
@@ -237,7 +241,7 @@
           <button class="btn btn-primary ps-4 pe-4" onclick="addToCart()">Add To Cart</button>
         </div>
       </div>
-      <div class="col col-12 col-lg-3 col-md-6 column nature">
+      <div class="col col-12 col-lg-3 col-md-6 column nature"  data-aos="zoom-in-left">
         <div class="content">
           <img src="img/home-Products/default-2.jpg" alt="Lights" style="width:100%">
           <h4>Lights</h4>
@@ -245,7 +249,7 @@
           <button class="btn btn-primary ps-4 pe-4" onclick="addToCart()">Add To Cart</button>
         </div>
       </div>
-      <div class="col col-12 col-lg-3 col-md-6 column nature">
+      <div class="col col-12 col-lg-3 col-md-6 column nature" data-aos="zoom-in">
         <div class="content">
           <img src="img/home-Products/default-3.jpg" alt="Nature" style="width:100%">
           <h4>Forest</h4>
@@ -253,8 +257,7 @@
           <button class="btn btn-primary ps-4 pe-4" onclick="addToCart()">Add To Cart</button>
         </div>
       </div>
-
-      <div class="col col-12 col-lg-3 col-md-6 column cars">
+      <div class="col col-12 col-lg-3 col-md-6 column cars" data-aos="zoom-in">
         <div class="content">
           <img src="img/home-Products/default-4.jpg" alt="Car" style="width:100%">
           <h4>Retro</h4>
@@ -262,7 +265,7 @@
           <button class="btn btn-primary ps-4 pe-4" onclick="addToCart()">Add To Cart</button>
         </div>
       </div>
-      <div class="col col-12 col-lg-3 col-md-6 column cars">
+      <div class="col col-12 col-lg-3 col-md-6 column cars"  data-aos="zoom-in-left">
         <div class="content">
           <img src="img/home-Products/default-5.jpg" alt="Car" style="width:100%">
           <h4>Fast</h4>
@@ -270,7 +273,7 @@
           <button class="btn btn-primary ps-4 pe-4" onclick="addToCart()">Add To Cart</button>
         </div>
       </div>
-      <div class="col col-12 col-lg-3 col-md-6 column cars">
+      <div class="col col-12 col-lg-3 col-md-6 column cars" data-aos="zoom-in">
         <div class="content">
           <img src="img/home-Products/default-6.jpg" alt="Car" style="width:100%">
           <h4>Classic</h4>
@@ -279,7 +282,7 @@
         </div>
       </div>
 
-      <div class="col col-12 col-lg-3 col-md-6 column people">
+      <div class="col col-12 col-lg-3 col-md-6 column people"  data-aos="zoom-in-left">
         <div class="content">
           <img src="img/home-Products/default-7.jpg" alt="Car" style="width:100%">
           <h4>Girl</h4>
@@ -287,7 +290,7 @@
           <button class="btn btn-primary ps-4 pe-4" onclick="addToCart()">Add To Cart</button>
         </div>
       </div>
-      <div class="col col-12 col-lg-3 col-md-6 column people">
+      <div class="col col-12 col-lg-3 col-md-6 column people" data-aos="zoom-in">
         <div class="content">
           <img src="img/home-Products/default-8.jpg" alt="Car" style="width:100%">
           <h4>Man</h4>
@@ -299,19 +302,20 @@
     </div>
   </div>
   <!-- END MAIN -->
+  
   <!-- START FOOTER  -->
-  <footer class="container-fluid pt-5 mt-1">
+  <footer class="container-fluid pt-5 mt-1" >
     <div class="row">
-      <div class="col-6 col-lg-4 col-md-4">
-        <ul>
-          <li><a href="#" class="text-white">Women</a></li>
+      <div class="col-6 col-lg-4 col-md-4" data-aos="zoom-in">
+        <ul >
+          <li><a href="#" class="text-white" >Women</a></li>
           <li><a href="#" class="text-white">Men</a></li>
           <li><a href="#" class="text-white">Accessories</a></li>
           <li><a href="#" class="text-white">About</a></li>
           <li><a href="#" class="text-white">Contact </a></li>
         </ul>
       </div>
-      <div class="col-6 col-lg-4 col-md-4">
+      <div class="col-6 col-lg-4 col-md-4" data-aos="zoom-in">
         <ul>
           <li><a href="#" class="text-white">My account</a></li>
           <li><a href="#" class="text-white">Wishlist</a></li>
@@ -322,7 +326,7 @@
           <li><a href="#" class="text-white" class="text-white">Order History </a></li>
         </ul>
       </div>
-      <div class="col-12 col-lg-4 col-md-4">
+      <div class="col-12 col-lg-4 col-md-4" data-aos="zoom-in" >
         <ul>
           <li><a href="#" class="text-white">Shipping & Returns</a></li>
           <li><a href="#" class="text-white">Store Policy</a></li>
@@ -330,7 +334,7 @@
           <li><a href="#" class="text-white">FAQ</a></li>
         </ul>
       </div>
-      <div class="col-12 col-lg-12 col-md-12">
+      <div class="col-12 col-lg-12 col-md-12" data-aos="flip-up">
         <ul>
           <li class="text-warning">
             Join our mailing list and get 10% off your purchase
@@ -345,45 +349,19 @@
       </div>
     </div>
   </footer>
+
   <!-- END FOOTER  -->
-  <!-- start Hide Clicked Right  -->
-  <!-- <div class="position">
-    <div class="containerr" >
-        <table style="text-align: left; width: 99%; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
-            <tbody>
-                <tr>
-                    <td style="vertical-align: middle; text-align: center;"><a href="index.html">Home </a><br>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="vertical-align: middle; text-align: center;"><a href="shop.html">Shop </a><br>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="vertical-align: middle; text-align: center;"><a href="about.html">About</a><br>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="vertical-align: middle; text-align: center;"><a href="myBlog.html">Blog </a><br>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="vertical-align: middle; text-align: center;"><a href="#">Option 5 </a><br>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div> -->
-  <!-- End Hide Clicked Right  -->
+ 
+
   <!-- main js -->
-  <!-- <link rel="stylesheet" href="script.js" /> -->
   <!-- script bootstrap -->
   <script src="js/all.min.js"></script>
-  <!-- <script src="js/script/main.js"></script> -->
   <script src="./js/script/shop.js"></script>
-  <!-- <script src="js/bootstrap.bundle.js.map"></script> -->
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="aos-master/aos-master/dist/aos.js"></script>
+    <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
