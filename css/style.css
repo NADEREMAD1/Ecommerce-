@@ -480,3 +480,9 @@ td:hover {
 .brand-hover:hover {
   border: 1px solid rgb(0, 0, 0);
 }
+/* About */
+.about-text {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 30px;
+  text-align: left !important ;
+}
